@@ -73,7 +73,7 @@ export function AboutPage() {
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}
               className="relative">
               <div className="rounded-3xl overflow-hidden shadow-2xl">
-                <ImageWithFallback src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=700&h=520&fit=crop&auto=format" alt="British Way Holdings leadership" className="w-full h-96 object-cover" />
+                <ImageWithFallback src="/logos/aboutus.png" alt="British Way Holdings leadership" className="w-full h-96 object-cover" />
               </div>
               <div className="absolute -bottom-5 -left-5 bg-white rounded-2xl shadow-xl p-5" style={{ border: "1px solid rgba(74,128,180,0.12)" }}>
                 <div style={{ fontWeight: 800, fontSize: "2rem", color: "#cc2222", lineHeight: 1 }}>20+</div>

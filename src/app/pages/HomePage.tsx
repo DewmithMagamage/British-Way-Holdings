@@ -13,7 +13,7 @@ import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 const slides = [
   {
     id: 1,
-    image: "/logos/heroimg4.png",
+    image: "/logos/hi001.png",
     title: "Shaping the Future Through Excellence",
     subtitle: "A diversified corporate group leading education, hospitality, and professional development across Sri Lanka.",
     cta: "Discover Our Story",
@@ -21,7 +21,7 @@ const slides = [
   },
   {
     id: 2,
-    image: "/logos/heroimg2.png",
+    image: "/logos/hi002.png",
     title: "Empowering the Leaders of Tomorrow",
     subtitle: "Thousands of students graduate each year from our world-class institutions, ready to lead in a global world.",
     cta: "Our Institutions",
@@ -29,7 +29,7 @@ const slides = [
   },
   {
     id: 3,
-    image: "/logos/heroimg02.png",
+    image: "/logos/hi003.png",
     title: "Where Elegance Meets Hospitality",
     subtitle: "The Pharo Hotel — a distinguished destination for world-class accommodation, dining, and events.",
     cta: "Explore The Pharo Hotel",
@@ -37,7 +37,7 @@ const slides = [
   },
   {
     id: 4,
-    image: "/logos/heroimg4.png",
+    image: "/logos/hi004.png",
     title: "Professional Excellence Redefined",
     subtitle: "Thames College and British Campus offer internationally recognised qualifications for today's professionals.",
     cta: "View Programmes",
