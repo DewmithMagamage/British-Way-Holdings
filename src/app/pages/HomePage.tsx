@@ -13,7 +13,7 @@ import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 const slides = [
   {
     id: 1,
-    image: "/logos/heroimg1.png",
+    image: "/logos/heroimg4.png",
     title: "Shaping the Future Through Excellence",
     subtitle: "A diversified corporate group leading education, hospitality, and professional development across Sri Lanka.",
     cta: "Discover Our Story",
@@ -21,7 +21,7 @@ const slides = [
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=1600&h=900&fit=crop&auto=format",
+    image: "/logos/heroimg2.png",
     title: "Empowering the Leaders of Tomorrow",
     subtitle: "Thousands of students graduate each year from our world-class institutions, ready to lead in a global world.",
     cta: "Our Institutions",
@@ -29,7 +29,7 @@ const slides = [
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=1600&h=900&fit=crop&auto=format",
+    image: "/logos/heroimg02.png",
     title: "Where Elegance Meets Hospitality",
     subtitle: "The Pharo Hotel — a distinguished destination for world-class accommodation, dining, and events.",
     cta: "Explore The Pharo Hotel",
@@ -37,7 +37,7 @@ const slides = [
   },
   {
     id: 4,
-    image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1600&h=900&fit=crop&auto=format",
+    image: "/logos/heroimg4.png",
     title: "Professional Excellence Redefined",
     subtitle: "Thames College and British Campus offer internationally recognised qualifications for today's professionals.",
     cta: "View Programmes",
@@ -118,9 +118,6 @@ export function HomePage() {
               alt={slide.title}
               className="absolute inset-0 w-full h-full object-cover"
             />
-            {/* Gradient overlays */}
-            <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(10,30,60,0.85) 0%, rgba(10,30,60,0.55) 55%, rgba(10,30,60,0.25) 100%)" }} />
-            <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(10,30,60,0.6) 0%, transparent 50%)" }} />
           </motion.div>
         </AnimatePresence>
 
