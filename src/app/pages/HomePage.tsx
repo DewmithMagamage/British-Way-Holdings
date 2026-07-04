@@ -46,8 +46,8 @@ const slides = [
 ];
 
 const stats = [
-  { icon: Users, label: "Students Enrolled", value: "50,000+" },
-  { icon: GraduationCap, label: "Graduates", value: "10000+" },
+  { icon: Users, label: "Companies", value: "8" },
+  { icon: GraduationCap, label: "Employees", value: "2000+" },
   { icon: Globe, label: "Partnerships", value: "20+" },
   { icon: Award, label: "Awards", value: "40+" },
 ];
@@ -212,16 +212,7 @@ export function HomePage() {
           />
         )}
 
-        {/* Slide number */}
-        <div className="absolute top-1/2 right-8 -translate-y-1/2 z-20 hidden lg:flex flex-col items-center gap-3">
-          <div style={{ fontWeight: 700, fontSize: "2rem", color: "rgba(255,255,255,0.9)", lineHeight: 1 }}>
-            {String(current + 1).padStart(2, "0")}
-          </div>
-          <div className="w-px h-12" style={{ background: "rgba(255,255,255,0.25)" }} />
-          <div style={{ fontSize: "12px", color: "rgba(255,255,255,0.4)" }}>
-            {String(slides.length).padStart(2, "0")}
-          </div>
-        </div>
+
       </section>
 
       {/* ── QUICK STATS BAR ── */}
@@ -289,8 +280,8 @@ export function HomePage() {
             >
               <div className="rounded-3xl overflow-hidden shadow-2xl">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=700&h=500&fit=crop&auto=format"
-                  alt="British Way Holdings campus"
+                  src="/logos/aboutus.png"
+                  alt="British Way Holdings"
                   className="w-full h-80 object-cover"
                 />
                 <div className="absolute inset-0 rounded-3xl" style={{ background: "linear-gradient(to top, rgba(26,58,107,0.35), transparent 55%)" }} />
@@ -301,7 +292,7 @@ export function HomePage() {
                 className="absolute -bottom-5 -left-5 bg-white rounded-2xl shadow-xl p-5"
                 style={{ border: "1px solid rgba(74,128,180,0.1)" }}
               >
-                <div style={{ fontWeight: 800, fontSize: "2rem", color: "#cc2222", lineHeight: 1 }}>15+</div>
+                <div style={{ fontWeight: 800, fontSize: "2rem", color: "#cc2222", lineHeight: 1 }}>22+</div>
                 <div style={{ fontFamily: "'Open Sans', sans-serif", fontSize: "12px", color: "#5a7898", marginTop: "2px" }}>Years of Excellence</div>
               </motion.div>
               <motion.div

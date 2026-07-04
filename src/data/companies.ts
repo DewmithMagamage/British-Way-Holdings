@@ -27,10 +27,10 @@ export const companies: Company[] = [
     desc: "Sri Lanka's premier English language institute offering internationally recognised programmes, Cambridge preparation, and professional development courses for all ages.",
     longDesc:
       "British Way English Academy (BWEA) has been at the forefront of English language education in Sri Lanka for over a decade. From young learners taking their first steps in English to professionals preparing for international careers, BWEA delivers structured programmes aligned with Cambridge and IELTS standards. Our experienced faculty, modern classrooms, and flexible online learning options ensure every student receives personalised attention and measurable progress.",
-    img: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=560&h=360&fit=crop&auto=format",
+    img: "/logos/britishway.png",
     points: ["Cambridge & IELTS Preparation", "Corporate English Training", "Kids & Teens Programmes", "Online Learning Platform"],
     website: "https://www.bwea.lk",
-    phone: "+94 11 234 5679",
+    phone: "+94 33 202 4141",
     email: "bwea@britishway.lk",
   },
   {
