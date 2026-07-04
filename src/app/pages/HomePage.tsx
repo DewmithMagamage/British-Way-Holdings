@@ -13,7 +13,7 @@ import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 const slides = [
   {
     id: 1,
-    image: "https://images.unsplash.com/photo-1562774053-701939374585?w=1600&h=900&fit=crop&auto=format",
+    image: "/logos/heroimg1.png",
     title: "Shaping the Future Through Excellence",
     subtitle: "A diversified corporate group leading education, hospitality, and professional development across Sri Lanka.",
     cta: "Discover Our Story",
