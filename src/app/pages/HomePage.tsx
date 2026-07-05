@@ -7,7 +7,7 @@ import { getLatestNews } from "@/data/news";
 import { getFeaturedLeaders } from "@/data/leaders";
 import { getGalleryPreview } from "@/data/gallery";
 import { visionMissionItems } from "@/data/aboutContent";
-import { CompanyLogo } from "../components/CompanyLogo";
+import { CompanyMarquee } from "../components/CompanyMarquee";
 import { BrandLogo } from "../components/BrandLogo";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 
@@ -311,7 +311,7 @@ export function HomePage() {
       </section>
 
       {/* ── GROUP COMPANIES ── */}
-      <section className="py-20" style={{ background: "#eaf2fb" }}>
+      <section className="py-20 overflow-hidden" style={{ background: "#eaf2fb" }}>
         <div className="max-w-6xl mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -324,39 +324,18 @@ export function HomePage() {
               {companies.length} Companies, <span style={{ color: "#4a80b4" }}>One Vision</span>
             </h2>
           </motion.div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {companies.map((c, i) => (
-              <motion.div
-                key={c.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.08 }}
-                className="group flex flex-col items-center text-center p-6 rounded-3xl bg-white border transition-all duration-300 hover:shadow-xl hover:-translate-y-1 cursor-pointer"
-                style={{ borderColor: "rgba(74,128,180,0.1)" }}
-                onClick={() => navigate(`/companies/${c.slug}`)}
-              >
-                <CompanyLogo
-                  slug={c.slug}
-                  short={c.short}
-                  color={c.color}
-                  accent={c.accent}
-                  className="mb-4 group-hover:scale-110 transition-transform duration-300"
-                />
-                <div style={{ fontWeight: 600, fontSize: "12px", color: "#1a2f4a", lineHeight: 1.35, marginBottom: "4px" }}>{c.name}</div>
-                <div style={{ fontFamily: "'Open Sans', sans-serif", fontSize: "11px", color: "#5a7898" }}>{c.cat}</div>
-              </motion.div>
-            ))}
-          </div>
-          <div className="text-center mt-10">
-            <button
-              onClick={() => navigate("/about#companies")}
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl font-semibold text-[14px] transition-all duration-300 hover:scale-[1.03]"
-              style={{ background: "white", color: "#2a5a94", border: "2px solid rgba(74,128,180,0.25)", fontFamily: "'Poppins', sans-serif" }}
-            >
-              Explore All Companies <ArrowRight size={15} />
-            </button>
-          </div>
+        </div>
+
+        <CompanyMarquee />
+
+        <div className="max-w-6xl mx-auto px-6 text-center mt-10">
+          <button
+            onClick={() => navigate("/about#companies")}
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl font-semibold text-[14px] transition-all duration-300 hover:scale-[1.03]"
+            style={{ background: "white", color: "#2a5a94", border: "2px solid rgba(74,128,180,0.25)", fontFamily: "'Poppins', sans-serif" }}
+          >
+            Explore All Companies <ArrowRight size={15} />
+          </button>
         </div>
       </section>
 
