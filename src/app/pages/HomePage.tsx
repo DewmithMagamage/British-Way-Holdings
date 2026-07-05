@@ -6,6 +6,7 @@ import { companies } from "@/data/companies";
 import { getLatestNews } from "@/data/news";
 import { getFeaturedLeaders } from "@/data/leaders";
 import { getGalleryPreview } from "@/data/gallery";
+import { visionMissionItems } from "@/data/aboutContent";
 import { CompanyLogo } from "../components/CompanyLogo";
 import { BrandLogo } from "../components/BrandLogo";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
@@ -369,16 +370,7 @@ export function HomePage() {
             </h2>
           </motion.div>
           <div className="grid md:grid-cols-2 gap-8">
-            {[
-              {
-                emoji: "🎯", title: "Our Vision", bg: "linear-gradient(135deg, #1a3a6b, #0f2548)",
-                text: "To be the most respected and trusted corporate group in South Asia, known for transforming lives through world-class education, exceptional hospitality, and professional excellence.",
-              },
-              {
-                emoji: "🚀", title: "Our Mission", bg: "linear-gradient(135deg, #cc2222, #8a0f0f)",
-                text: "To deliver exceptional value to students, guests, and partners by maintaining the highest standards of quality, innovation, and integrity across all our enterprises.",
-              },
-            ].map((item) => (
+            {visionMissionItems.map((item) => (
               <motion.div
                 key={item.title}
                 initial={{ opacity: 0, y: 24 }}
@@ -388,7 +380,7 @@ export function HomePage() {
                 style={{ background: item.bg }}
               >
                 <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5" style={{ background: "rgba(255,255,255,0.12)" }}>
-                  <span style={{ fontSize: "24px" }}>{item.emoji}</span>
+                  <ImageWithFallback src={item.icon} alt={item.title} className="w-8 h-8 object-contain" />
                 </div>
                 <h3 style={{ fontWeight: 700, fontSize: "1.4rem", color: "white", marginBottom: "14px" }}>{item.title}</h3>
                 <p style={{ fontFamily: "'Open Sans', sans-serif", fontSize: "0.95rem", color: "rgba(255,255,255,0.82)", lineHeight: 1.8 }}>{item.text}</p>

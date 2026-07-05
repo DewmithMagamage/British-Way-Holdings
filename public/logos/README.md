@@ -40,3 +40,16 @@ To add a British Way Holdings main logo for the navbar and footer, place it at:
 ```
 public/logos/british-way-holdings.png
 ```
+
+## Vision & Mission icons
+
+Place these in `public/logos/`:
+
+| Section | Filename |
+|---------|----------|
+| Our Vision | `eye.png` |
+| Our Mission | `target.png` |
+
+## Core Values icons
+
+Upload PNG icons to `public/logos/values/`. See `public/logos/values/README.md` for filenames.

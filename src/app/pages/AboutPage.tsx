@@ -3,15 +3,8 @@ import { useNavigate } from "react-router";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { companies } from "@/data/companies";
+import { coreValues, visionMissionItems } from "@/data/aboutContent";
 import { CompanyLogo } from "../components/CompanyLogo";
-
-const values = [
-  { emoji: "🏆", title: "Excellence", desc: "We pursue the highest standards in every programme, service, and interaction." },
-  { emoji: "🤝", title: "Integrity", desc: "Honesty and transparency are the cornerstones of every relationship we build." },
-  { emoji: "💡", title: "Innovation", desc: "We embrace new ideas and forward-thinking approaches to remain ahead." },
-  { emoji: "👑", title: "Leadership", desc: "We inspire, develop, and celebrate the leaders of tomorrow." },
-  { emoji: "🌿", title: "Sustainability", desc: "Every decision we make considers its long-term impact on people and planet." },
-];
 
 function SectionLabel({ children }: { children: string }) {
   return (
@@ -94,20 +87,11 @@ export function AboutPage() {
             </h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
-            {[
-              {
-                emoji: "🎯", title: "Our Vision", bg: "linear-gradient(135deg, #1a3a6b, #0f2548)",
-                text: "To be the most respected and trusted corporate group in South Asia, known for transforming lives through world-class education, exceptional hospitality, and professional excellence."
-              },
-              {
-                emoji: "🚀", title: "Our Mission", bg: "linear-gradient(135deg, #cc2222, #8a0f0f)",
-                text: "To deliver exceptional value to students, guests, and partners by maintaining the highest standards of quality, innovation, and integrity across all our enterprises."
-              }
-            ].map((item) => (
+            {visionMissionItems.map((item) => (
               <motion.div key={item.title} initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
                 className="p-8 rounded-3xl text-white" style={{ background: item.bg }}>
                 <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5" style={{ background: "rgba(255,255,255,0.12)" }}>
-                  <span style={{ fontSize: "24px" }}>{item.emoji}</span>
+                  <ImageWithFallback src={item.icon} alt={item.title} className="w-8 h-8 object-contain" />
                 </div>
                 <h3 style={{ fontWeight: 700, fontSize: "1.4rem", color: "white", marginBottom: "14px" }}>{item.title}</h3>
                 <p style={{ fontFamily: "'Open Sans', sans-serif", fontSize: "0.95rem", color: "rgba(255,255,255,0.82)", lineHeight: 1.8 }}>{item.text}</p>
@@ -127,11 +111,13 @@ export function AboutPage() {
             </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
-            {values.map((v, i) => (
+            {coreValues.map((v, i) => (
               <motion.div key={v.title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
                 className="group text-center p-6 rounded-3xl bg-white border transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
                 style={{ borderColor: "rgba(74,128,180,0.1)" }}>
-                <div className="text-3xl mb-4">{v.emoji}</div>
+                <div className="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-2xl" style={{ background: "rgba(74,128,180,0.08)" }}>
+                  <ImageWithFallback src={v.icon} alt={v.title} className="w-9 h-9 object-contain" />
+                </div>
                 <div style={{ fontWeight: 700, fontSize: "14px", color: "#1a2f4a", marginBottom: "8px" }}>{v.title}</div>
                 <div style={{ fontFamily: "'Open Sans', sans-serif", fontSize: "12px", color: "#5a7898", lineHeight: 1.65 }}>{v.desc}</div>
               </motion.div>
