@@ -15,6 +15,7 @@ const slides = [
   {
     id: 1,
     image: "/logos/hi001.png",
+    mobileImage: "/logos/mi001.png",
     title: "Shaping the Future Through Excellence",
     subtitle: "A diversified corporate group leading education, hospitality, and professional development across Sri Lanka.",
     cta: "Discover Our Story",
@@ -23,6 +24,7 @@ const slides = [
   {
     id: 2,
     image: "/logos/hi002.png",
+    mobileImage: "/logos/mi002.png",
     title: "Empowering the Leaders of Tomorrow",
     subtitle: "Thousands of students graduate each year from our world-class institutions, ready to lead in a global world.",
     cta: "Our Institutions",
@@ -31,6 +33,7 @@ const slides = [
   {
     id: 3,
     image: "/logos/hi003.png",
+    mobileImage: "/logos/mi001.png",
     title: "Where Elegance Meets Hospitality",
     subtitle: "The Pharo Hotel — a distinguished destination for world-class accommodation, dining, and events.",
     cta: "Explore The Pharo Hotel",
@@ -39,6 +42,7 @@ const slides = [
   {
     id: 4,
     image: "/logos/hi004.png",
+    mobileImage: "/logos/mi002.png",
     title: "Professional Excellence Redefined",
     subtitle: "Thames College and British Campus offer internationally recognised qualifications for today's professionals.",
     cta: "View Programmes",
@@ -98,7 +102,7 @@ export function HomePage() {
     <div style={{ fontFamily: "'Poppins', sans-serif" }}>
       {/* ── HERO CAROUSEL ── */}
       <section
-        className="relative h-screen min-h-[620px] max-h-[900px] overflow-hidden"
+        className="relative h-[100svh] min-h-[620px] max-h-[900px] md:h-screen overflow-hidden"
         onMouseEnter={() => setPaused(true)}
         onMouseLeave={() => setPaused(false)}
       >
@@ -117,7 +121,14 @@ export function HomePage() {
             <ImageWithFallback
               src={slide.image}
               alt={slide.title}
-              className="absolute inset-0 w-full h-full object-cover"
+              loading="eager"
+              className="absolute inset-0 hidden md:block w-full h-full object-cover"
+            />
+            <ImageWithFallback
+              src={slide.mobileImage}
+              alt={slide.title}
+              loading="eager"
+              className="absolute inset-0 md:hidden w-full h-full object-cover object-center"
             />
           </motion.div>
         </AnimatePresence>
