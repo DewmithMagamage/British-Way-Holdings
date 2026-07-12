@@ -33,7 +33,7 @@ const slides = [
   {
     id: 3,
     image: "/logos/hi003.png",
-    mobileImage: "/logos/mi001.png",
+    mobileImage: "/logos/mi003.png",
     title: "Where Elegance Meets Hospitality",
     subtitle: "The Pharo Hotel — a distinguished destination for world-class accommodation, dining, and events.",
     cta: "Explore The Pharo Hotel",
