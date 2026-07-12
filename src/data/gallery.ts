@@ -9,8 +9,8 @@ export interface GalleryPhoto {
 export const galleryCategories = ["All", "Corporate Events", "Educational Activities", "Graduation", "Hospitality", "Community"];
 
 export const galleryPhotos: GalleryPhoto[] = [
-  { id: 1, src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=520&fit=crop&auto=format", alt: "Corporate annual conference 2025", cat: "Corporate Events", span: "col-span-2 row-span-2" },
-  { id: 2, src: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=300&fit=crop&auto=format", alt: "University campus learning session", cat: "Educational Activities" },
+  { id: 1, src: "/logos/gly01", alt: "Mindfulness Session For Educators", cat: "Student workshop and innovation lab", span: "col-span-2 row-span-2" },
+  { id: 2, src: "/logos/gly02", alt: "University campus learning session", cat: "Educational Activities" },
   { id: 3, src: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=400&h=300&fit=crop&auto=format", alt: "Graduation ceremony 2025", cat: "Graduation" },
   { id: 4, src: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=300&fit=crop&auto=format", alt: "The Pharo Hotel lobby and atrium", cat: "Hospitality" },
   { id: 5, src: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=400&h=300&fit=crop&auto=format", alt: "Student workshop and innovation lab", cat: "Educational Activities" },
