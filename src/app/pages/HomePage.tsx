@@ -42,7 +42,7 @@ const slides = [
   {
     id: 4,
     image: "/logos/hi004.png",
-    mobileImage: "/logos/mi002.png",
+    mobileImage: "/logos/mi004.png",
     title: "Professional Excellence Redefined",
     subtitle: "Thames College and British Campus offer internationally recognised qualifications for today's professionals.",
     cta: "View Programmes",
