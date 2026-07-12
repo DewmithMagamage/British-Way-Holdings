@@ -164,7 +164,7 @@ export function HomePage() {
                     className="flex items-center gap-2 px-7 py-3.5 rounded-2xl text-white font-semibold text-[14px] transition-all duration-300 hover:scale-[1.04] hover:shadow-2xl"
                     style={{ background: "linear-gradient(135deg, #4a80b4, #2a5a94)", boxShadow: "0 8px 28px rgba(74,128,180,0.5)" }}
                   >
-                    {slide.cta} <ArrowRight size={15} />
+                    {slide.cta} 
                   </button>
                   <button
                     onClick={() => navigate("/contact")}
