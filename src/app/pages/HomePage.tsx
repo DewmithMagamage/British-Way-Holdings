@@ -196,22 +196,7 @@ export function HomePage() {
           ))}
         </div>
 
-        {/* Prev / Next arrows */}
-        <button
-          onClick={() => go(-1)}
-          className="absolute left-5 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-2xl flex items-center justify-center transition-all duration-200 hover:scale-110"
-          style={{ background: "rgba(255,255,255,0.15)", backdropFilter: "blur(8px)", border: "1px solid rgba(255,255,255,0.25)" }}
-        >
-          <ChevronLeft size={20} color="white" />
-        </button>
-        <button
-          onClick={() => go(1)}
-          className="absolute right-5 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-2xl flex items-center justify-center transition-all duration-200 hover:scale-110"
-          style={{ background: "rgba(255,255,255,0.15)", backdropFilter: "blur(8px)", border: "1px solid rgba(255,255,255,0.25)" }}
-        >
-          <ChevronRight size={20} color="white" />
-        </button>
-
+        
         {/* Progress bar */}
         {!paused && (
           <motion.div
