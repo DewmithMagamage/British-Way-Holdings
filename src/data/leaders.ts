@@ -21,7 +21,7 @@ export const leaders: Leader[] = [
     title: "Chairperson",
     bio: "A distinguished leader with an illustrious career spanning academia and corporate governance, Madam Rajapaksha chairs the board with wisdom and an unwavering commitment to the group's founding values.",
     message: "I believe that the measure of an organisation's success lies in the positive change it creates in the community it serves.",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&auto=format",
+    image: "/logos/madam_rajapaksha.png",
     featured: true,
   },
   {

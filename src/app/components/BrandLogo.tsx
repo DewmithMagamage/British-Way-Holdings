@@ -1,13 +1,15 @@
 import { useState } from "react";
 
 export const HOLDINGS_LOGO_PATH = "/logos/british-way-holdings.png";
+export const HOLDINGS_LOGO_WHITE_PATH = "/logos/bwholdingswhitelogo.png";
 
 interface BrandLogoProps {
   height?: number;
   className?: string;
+  src?: string;
 }
 
-export function BrandLogo({ height = 40, className = "" }: BrandLogoProps) {
+export function BrandLogo({ height = 40, className = "", src = HOLDINGS_LOGO_PATH }: BrandLogoProps) {
   const [failed, setFailed] = useState(false);
 
   if (failed) {
@@ -23,7 +25,7 @@ export function BrandLogo({ height = 40, className = "" }: BrandLogoProps) {
 
   return (
     <img
-      src={HOLDINGS_LOGO_PATH}
+      src={src}
       alt="British Way Holdings"
       className={`object-contain object-left ${className}`}
       style={{ height, width: "auto", maxWidth: "none" }}

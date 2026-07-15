@@ -8,7 +8,7 @@ import { getFeaturedLeaders } from "@/data/leaders";
 import { getGalleryPreview } from "@/data/gallery";
 import { visionMissionItems } from "@/data/aboutContent";
 import { CompanyMarquee } from "../components/CompanyMarquee";
-import { BrandLogo } from "../components/BrandLogo";
+import { BrandLogo, HOLDINGS_LOGO_WHITE_PATH } from "../components/BrandLogo";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 
 const slides = [
@@ -148,7 +148,7 @@ export function HomePage() {
                 {/* Badge */}
                 <div className="inline-flex items-center px-4 py-2.5 rounded-full mb-6"
                   style={{ background: "rgba(255,255,255,0.12)", border: "1px solid rgba(255,255,255,0.2)", backdropFilter: "blur(8px)" }}>
-                  <BrandLogo height={32} />
+                  <BrandLogo height={32} src={HOLDINGS_LOGO_WHITE_PATH} />
                 </div>
 
                 <h1 style={{ fontWeight: 800, fontSize: "clamp(2rem, 5.5vw, 3.8rem)", color: "white", lineHeight: 1.12, letterSpacing: "-0.02em", marginBottom: "20px" }}>
