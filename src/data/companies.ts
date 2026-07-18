@@ -112,7 +112,7 @@ export const companies: Company[] = [
     desc: "A creative production house delivering high-quality film, television, and digital content for brands, events, and entertainment across Sri Lanka and beyond.",
     longDesc:
       "Emika Productions is the creative engine behind compelling visual storytelling for brands, events, and entertainment. Our team of directors, cinematographers, editors, and designers produces everything from corporate brand films and television content to live event coverage and digital campaigns. We combine artistic vision with technical excellence to deliver content that resonates.",
-    img: "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=560&h=360&fit=crop&auto=format",
+    img: "/logos/emikaproductions.png",
     points: ["Film & Video Production", "Corporate Brand Films", "Event Coverage", "Digital Content Creation"],
     website: "https://www.emikaproductions.lk",
     phone: "+94 11 234 5684",
@@ -146,7 +146,7 @@ export const companies: Company[] = [
     desc: "The entertainment arm of British Way Holdings, producing live events, concerts, and cultural experiences that bring audiences together across Sri Lanka.",
     longDesc:
       "British Way Entertainment curates and produces live concerts, cultural festivals, corporate events, and artist showcases across Sri Lanka. From intimate performances to large-scale productions, our experienced events team handles concept, production, artist management, and promotion. We create memorable experiences that celebrate talent and bring communities together.",
-    img: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=560&h=360&fit=crop&auto=format",
+    img: "",
     points: ["Live Concerts & Shows", "Corporate Events", "Artist Management", "Cultural Festivals"],
     website: "https://www.britishwayentertainment.lk",
     phone: "+94 11 234 5686",
