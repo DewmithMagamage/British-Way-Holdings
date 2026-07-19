@@ -44,7 +44,7 @@ export const companies: Company[] = [
     desc: "An internationally-accredited school offering a world-class curriculum that prepares students for a competitive global future, with a strong emphasis on character development.",
     longDesc:
       "British Way International School (BWIS) provides a holistic British-style education from early years through A-Levels. Our curriculum balances academic rigour with creative arts, sports, and leadership development. With modern STEM facilities, dedicated pastoral care, and a diverse student community, BWIS equips young people with the knowledge, confidence, and values to succeed anywhere in the world.",
-    img: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=560&h=360&fit=crop&auto=format",
+    img: "/logos/bwisschool.png",
     points: ["British National Curriculum", "O/L & A/L Programmes", "Extra-curricular Excellence", "Modern STEM Facilities"],
     website: "https://www.bwis.lk",
     phone: "+94 11 234 5683",
