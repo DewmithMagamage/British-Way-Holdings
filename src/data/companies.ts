@@ -78,7 +78,7 @@ export const companies: Company[] = [
     desc: "A distinguished hospitality establishment offering world-class accommodation, award-winning dining experiences, and premium event facilities in the heart of Colombo.",
     longDesc:
       "The Pharo Hotel is a boutique luxury destination in Colombo, designed for discerning travellers, corporate guests, and event organisers. From elegantly appointed rooms and suites to our award-winning restaurant, spa, and versatile conference spaces, every detail reflects our commitment to refined hospitality. Whether for business or leisure, The Pharo Hotel delivers an unforgettable stay.",
-    img: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=560&h=360&fit=crop&auto=format",
+    img: "/logos/hotel.png",
     points: ["Luxury Accommodation", "Fine Dining Restaurant", "Events & Conferences", "Spa & Wellness"],
     website: "https://www.pharohotel.lk",
     phone: "+94 11 234 5680",
