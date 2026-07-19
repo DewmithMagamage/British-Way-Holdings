@@ -61,7 +61,7 @@ export const companies: Company[] = [
     desc: "A higher education institution offering degree and diploma programmes in partnership with leading UK universities, bridging Sri Lankan students to world-class qualifications.",
     longDesc:
       "British Campus connects ambitious students and working professionals with internationally recognised UK degree and diploma programmes. Through partnerships with leading British universities, we offer pathways in business, management, IT, and engineering — with flexible full-time, part-time, and blended study modes. Our academic support team guides every learner from enrolment to graduation and beyond.",
-    img: "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=560&h=360&fit=crop&auto=format",
+    img: "/logos/bche.png",
     points: ["UK University Partnerships", "Business & Management", "IT & Engineering", "Flexible Study Modes"],
     website: "https://www.britishcampus.lk",
     phone: "+94 11 234 5681",
