@@ -112,7 +112,7 @@ export const companies: Company[] = [
     desc: "A creative production house delivering high-quality film, television, and digital content for brands, events, and entertainment across Sri Lanka and beyond.",
     longDesc:
       "Emika Productions is the creative engine behind compelling visual storytelling for brands, events, and entertainment. Our team of directors, cinematographers, editors, and designers produces everything from corporate brand films and television content to live event coverage and digital campaigns. We combine artistic vision with technical excellence to deliver content that resonates.",
-    img: "/logos/emikaproductions.png",
+    img: "/logos/emikaproduction.png",
     points: ["Film & Video Production", "Corporate Brand Films", "Event Coverage", "Digital Content Creation"],
     website: "https://www.emikaproductions.lk",
     phone: "+94 11 234 5684",
