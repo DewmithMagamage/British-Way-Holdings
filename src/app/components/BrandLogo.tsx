@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export const HOLDINGS_LOGO_PATH = "/logos/british-way-holdings.png";
-export const HOLDINGS_LOGO_WHITE_PATH = "/logos/bwholdingswhitelogo.png";
+export const HOLDINGS_LOGO_WHITE_PATH = "/logos/british-way-holdings.png";
 
 interface BrandLogoProps {
   height?: number;
